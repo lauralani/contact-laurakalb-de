@@ -37,6 +37,8 @@ namespace contact
             log.LogInformation(message.Body);
             log.LogInformation(req.Headers["X-Laura-Domain"]);
 
+            
+
 
             return new OkObjectResult("ok");
         }
