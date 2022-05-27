@@ -4,3 +4,9 @@ $(document).ready(function(){
 		$('.message').addClass('pull');
 	})
 });
+
+
+
+async function form_submit() {
+    
+}
