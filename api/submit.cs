@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using System.Threading.Tasks;
+using System.Threading.Tasks; 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -35,6 +35,7 @@ namespace contact
             log.LogInformation(message.Email);
             log.LogInformation(message.Phone);
             log.LogInformation(message.Body);
+            log.LogInformation(req.Headers["X-Laura-Domain"]);
 
 
             return new OkObjectResult("ok");
